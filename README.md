@@ -1,2 +1,3 @@
-# cv
-cv page
+# CV
+
+CV with Vite + React + TypeScript + Mantine

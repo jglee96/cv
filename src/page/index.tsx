@@ -18,8 +18,8 @@ import Profile from "../components/Profile";
 export default function Page() {
   return (
     <>
-      <Group justify="space-between">
-        <Box>
+      <Group justify="space-between" wrap="nowrap">
+        <Box maw={"calc(100% - 9rem - var(--mantine-spacing-md))"}>
           <Title>{RESUME_DATA.name}</Title>
           <Text className={classes.summary}>{RESUME_DATA.summary}</Text>
         </Box>
@@ -64,7 +64,7 @@ export default function Page() {
             <Text>{`${item.start} - ${item.end}`}</Text>
           </Flex>
           <Text>{item.title}</Text>
-          <Text>{item.description}</Text>
+          <Text size="sm">{item.description}</Text>
         </Stack>
       ))}
       <Title>Education</Title>
@@ -80,7 +80,7 @@ export default function Page() {
         </Stack>
       ))}
       <Title>Skills</Title>
-      <Flex gap={4}>
+      <Flex gap={4} wrap="wrap">
         {RESUME_DATA.skills.map((item) => (
           <Badge key={item} radius="md">
             {item}

@@ -32,7 +32,7 @@ function App() {
   return (
     <MantineProvider theme={theme}>
       <AppShell>
-        <AppShell.Main maw="42rem" mx="auto" mt="4rem">
+        <AppShell.Main maw="42rem" mx="auto" my="4rem">
           <Page />
         </AppShell.Main>
       </AppShell>

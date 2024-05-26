@@ -38,13 +38,13 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Pohang University of Science and Technology",
+      school: "Pohang University of Science and Technology (POSTECH)",
       degree: "Master's Degree in Electrical Engineering",
       start: "2018",
       end: "2020",
     },
     {
-      school: "Pohang University of Science and Technology",
+      school: "Pohang University of Science and Technology (POSTECH)",
       degree: "Bachelor's Degree in Electrical Engineering",
       start: "2014",
       end: "2018",
@@ -66,12 +66,44 @@ export const RESUME_DATA = {
           <li>
             <h3>BUILDIT 플랫폼 개발</h3>
           </li>
+          <h4>기존 코드 유지 보수</h4>
+          <p>
+            5년 전부터 시작된 프로젝트에서 React 클래스 컴포넌트의 단점들이
+            드러났습니다. 그래서 새로운 기획이 생길 때마다 함수형 컴포넌트로의
+            전환과 함께 상태 관리를 위해 zustand를 도입하고, 패키지 버전
+            업데이트를 통해 유지보수를 수행했습니다. 또한 react-router와
+            tanstack-query 등의 패키지도 업데이트하여 프로젝트의 효율성을
+            높였습니다.
+          </p>
+          <h4>구조 설계</h4>
+          <p>
+            이전 프로젝트는 설계 없이 필요한 기능에 따라 데이터를 조건문으로
+            처리하는 방식으로 진행되었습니다. 그 결과, 새로운 기능이 추가될
+            때마다 조건문이 계속해서 늘어나는 코드 스멜이 발생했습니다. 이에
+            대응하여 최대한 컴포넌트를 분리하고, CSS 재사용과 디자인 패턴을
+            적용하여 구조 설계와 개발을 진행했습니다.
+          </p>
           <li>
             <h3>회사 내부 용도 ERP 개발</h3>
           </li>
+          <h4>기존 ERP를 새로 zero to one 구현</h4>
+          <p>
+            기존의 오래된 ERP 시스템을 새로 구현하는 프로젝트였습니다. 이전
+            시스템은 너무 오래되어서 개발 서버 조차 실행되지 않았습니다. 새로운
+            시스템은 antd UI 컴포넌트를 활용하여 개발되었는데, 원하는 동작과
+            다른 경우 patch-package를 사용하여 커스터마이징했습니다.
+          </p>
           <li>
             <h3>지적도 다운로드 서비스 개발</h3>
           </li>
+          <h4>네이버 지도 API를 사용하여 사용자 인터렉션 구현</h4>
+          <p>
+            지적도 정보를 다운로드 받으려는 사용자가 원하는 영역을 선택하는
+            과정을 구현한 것입니다. 이를 위해 네이버 지도 API를 활용하여 지도
+            상에서 사용자가 원하는 지역을 선택할 수 있는 기능을 개발했습니다.
+          </p>
+          <h4>monorepo 도입</h4>
+          <p>monorepo 도구 Nx를 사용하여 개발</p>
         </ul>
       ),
     },

@@ -19,9 +19,16 @@ export default function Page() {
   return (
     <>
       <Group justify="space-between" wrap="nowrap">
-        <Box maw={"calc(100% - 9rem - var(--mantine-spacing-md))"}>
+        <Box
+          maw={{
+            sm: "calc(100% - 9rem - var(--mantine-spacing-md))",
+            base: "100%",
+          }}
+        >
           <Title>{RESUME_DATA.name}</Title>
-          <Text className={classes.summary}>{RESUME_DATA.summary}</Text>
+          <Text component="div" className={classes.summary}>
+            {RESUME_DATA.summary}
+          </Text>
         </Box>
         <Profile />
       </Group>
@@ -63,8 +70,10 @@ export default function Page() {
             </Anchor>
             <Text>{`${item.start} - ${item.end}`}</Text>
           </Flex>
-          <Text>{item.title}</Text>
-          <Text size="sm">{item.description}</Text>
+          <Text component="div">{item.title}</Text>
+          <Text component="div" size="sm">
+            {item.description}
+          </Text>
         </Stack>
       ))}
       <Title>Education</Title>

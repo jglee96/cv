@@ -9,13 +9,16 @@ import {
   ActionIcon,
   Group,
   Box,
+  List,
 } from "@mantine/core";
 import { IconMail } from "@tabler/icons-react";
 import { RESUME_DATA } from "../assets/resume-data";
 import classes from "./index.module.css";
 import Profile from "../components/Profile";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function Page() {
+  const isPrint = useMediaQuery("print");
   return (
     <>
       <Group justify="space-between" wrap="nowrap">
@@ -33,25 +36,36 @@ export default function Page() {
         <Profile />
       </Group>
       <Space h="xs" />
-      <Group gap="xs">
-        <ActionIcon
-          component="a"
-          variant="outline"
-          href={`mailto:${RESUME_DATA.contact.email}`}
-        >
-          <IconMail />
-        </ActionIcon>
-        {RESUME_DATA.contact.social.map((item) => (
+      {!isPrint ? (
+        <Group gap="xs">
           <ActionIcon
-            key={item.name}
             component="a"
             variant="outline"
-            href={item.url}
+            href={`mailto:${RESUME_DATA.contact.email}`}
           >
-            <item.icon />
+            <IconMail />
           </ActionIcon>
-        ))}
-      </Group>
+          {RESUME_DATA.contact.social.map((item) => (
+            <ActionIcon
+              key={item.name}
+              component="a"
+              variant="outline"
+              href={item.url}
+            >
+              <item.icon />
+            </ActionIcon>
+          ))}
+        </Group>
+      ) : (
+        <List spacing={2} size="sm" center>
+          <List.Item icon={<IconMail />}>{RESUME_DATA.contact.email}</List.Item>
+          {RESUME_DATA.contact.social.map((item) => (
+            <List.Item key={item.name} icon={<item.icon />}>
+              {item.url}
+            </List.Item>
+          ))}
+        </List>
+      )}
       <Space h="md" />
       <Title>Work Experience</Title>
       {RESUME_DATA.work.map((item) => (

@@ -4,3 +4,9 @@ body {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
+
+@media print {
+  main {
+    margin-block: 0px !important;
+  }
+}

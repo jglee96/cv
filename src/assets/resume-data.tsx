@@ -1,4 +1,8 @@
-import { IconBrandCodepen, IconBrandGithub } from "@tabler/icons-react";
+import {
+  IconArticle,
+  IconBrandCodepen,
+  IconBrandGithub,
+} from "@tabler/icons-react";
 
 export const RESUME_DATA = {
   name: "이종건",
@@ -33,6 +37,11 @@ export const RESUME_DATA = {
         name: "Codepen",
         url: "https://codepen.io/jglee96",
         icon: IconBrandCodepen,
+      },
+      {
+        name: "Dev Blog",
+        url: "https://zakklee.dev",
+        icon: IconArticle,
       },
     ],
   },

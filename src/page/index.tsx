@@ -53,9 +53,6 @@ export default function Page() {
         ))}
       </Group>
       <Space h="md" />
-      {/* <Title>About</Title>
-<Text>{RESUME_DATA.about}</Text> */}
-      <Space h="md" />
       <Title>Work Experience</Title>
       {RESUME_DATA.work.map((item) => (
         <Stack key={item.company} gap={2} my="md">

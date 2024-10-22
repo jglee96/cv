@@ -63,11 +63,28 @@ export const RESUME_DATA = {
     {
       company: "TENELEVEN",
       link: "https://www.1011.co.kr",
-      title: (
-        <>
-          Software Engineer - Frontend (<b>React</b>)
-        </>
-      ),
+      title: <>Software Engineer - Frontend</>,
+      skills: [
+        "Javascript",
+        "Typescript",
+        "SCSS",
+        "CSS Moduels",
+        "React",
+        "Recoil",
+        "Zustand",
+        "Tanstack Query",
+        "React Router",
+        "Nx",
+        "PWA",
+        "Service Worker",
+        "Gitlab CI/CD",
+        "aws",
+        "serverless",
+        "naver maps",
+        "geojson",
+        "wkt",
+        "dxf",
+      ],
       start: "2022.10",
       end: "current",
       description: (
@@ -99,11 +116,11 @@ export const RESUME_DATA = {
           <span>
             기존의 오래된 ERP 시스템을 새로 구현하는 프로젝트였습니다. 이전
             시스템은 너무 오래되어서 개발 서버 조차 실행되지 않았습니다. 새로운
-            시스템은 antd UI 컴포넌트를 활용하여 개발되었는데, 원하는 동작과
+            시스템은 antd UI 컴포넌트를 활용하여 개발하였는데, 원하는 동작과
             다른 경우 patch-package를 사용하여 커스터마이징했습니다.
           </span>
           <li>
-            <h3>지적도 다운로드 서비스 개발</h3>
+            <h3>연속지적도 다운로드 서비스 개발</h3>
           </li>
           <h4>Monorepo 사용한 서비스 개발</h4>
           <span>
@@ -114,9 +131,9 @@ export const RESUME_DATA = {
             CI/CD 파이프라인을 구축하여 빌드 시간 단축 및 리소스 최적화를
             달성했습니다. 또한, 각 페이지를 독립적인 라이브러리로 구성하여 코드
             스플리팅을 적용함으로써 초기 로딩 속도를 개선하고 사용자 경험을
-            향상시켰습니다. 이를 통해 모놀리포 기반의 서비스 개발로 코드 중복이
-            크게 감소하고, 유지보수성이 향상되었으며, 빌드 및 배포 시간, 페이지
-            로딩 속도 개선 등의 성과를 이루었습니다.
+            향상시켰습니다. 이를 코드 중복이 크게 감소하고, 유지보수성이
+            향상되었으며, 빌드 및 배포 시간, 페이지 로딩 속도 개선 등의 성과를
+            이루었습니다.
           </span>
           <h4>네이버 지도 API를 사용하여 사용자 인터렉션 구현</h4>
           <span>
@@ -125,7 +142,7 @@ export const RESUME_DATA = {
             편의성을 대폭 향상시켰습니다. 또한, API 타입 정의 패키지 수정에
             참여하여 TypeScript 사용성을 개선하였으며, API 개발자 포럼에
             적극적으로 참여하고 있습니다. 또한, React에서 네이버 지도 API를
-            통일된 패턴으로 사용하기 위해 react-reconciler를 사용한 경험이
+            통일된 패턴으로 사용하기 위해 react-reconciler를 사용한 경험
             있습니다. 이러한 노력을 통해 사용자 인터렉션을 향상시키고, 서비스의
             신뢰성을 높여 사용자 경험을 극대화하는 성과를 달성했습니다.
           </span>
@@ -135,11 +152,8 @@ export const RESUME_DATA = {
     {
       company: "Tmax",
       link: "https://www.tmax.co.kr",
-      title: (
-        <>
-          Software Engineer (<b>Linux</b>, <b>C/C++</b>, <b>React</b>)
-        </>
-      ),
+      title: <>Software Engineer</>,
+      skills: ["Linux", "C/C++", "Python", "React"],
       start: "2020.02",
       end: "2022.10",
       description: (
@@ -158,12 +172,10 @@ export const RESUME_DATA = {
           </li>
           <h4>SVG에서 지원하지 않는 도형 rendering 기법 개발</h4>
           <span>
-            이전 C++에서 Skia를 사용하여 구현했던 기능들이 웹에서는
-            불가능하였습니다. 그러나 SVG, WebGL, electron등을 연구하여 구현
-            방안을 설계하였습니다.{" "}
+            이전 프로젝트에서 Skia를 사용하여 구현했던 기능들이 웹에서는
+            네이티브로 구현이 불가능하였습니다. 그래서 SVG, WebGL, electron등을
+            연구하여 새로운 구현 방안을 설계하였습니다.
           </span>
-          <h4>SVG 관련 오픈소스 참여</h4>
-          <span></span>
           <h4>React Component에서 command 생성</h4>
           <span>
             사용자가 조작하여 value가 바뀌면 command를 생성하여 model을 업데이트
@@ -186,20 +198,6 @@ export const RESUME_DATA = {
         </ul>
       ),
     },
-  ],
-  skills: [
-    "Linux",
-    "C/C++",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "PWA",
-    "Recoil",
-    "Zustand",
-    "TanStack Query",
-    "React Router",
-    "Nx",
-    "GitLab CI/CD",
   ],
   projects: [],
 } as const;

@@ -82,6 +82,13 @@ export default function Page() {
             <Text>{`${item.start} - ${item.end}`}</Text>
           </Flex>
           <Text component="div">{item.title}</Text>
+          <Flex gap={4} wrap="wrap">
+            {item.skills.map((item) => (
+              <Badge key={item} radius="md">
+                {item}
+              </Badge>
+            ))}
+          </Flex>
           <Text component="div" size="sm">
             {item.description}
           </Text>
@@ -99,14 +106,6 @@ export default function Page() {
           <Text>{item.degree}</Text>
         </Stack>
       ))}
-      <Title>Skills</Title>
-      <Flex gap={4} wrap="wrap">
-        {RESUME_DATA.skills.map((item) => (
-          <Badge key={item} radius="md">
-            {item}
-          </Badge>
-        ))}
-      </Flex>
     </>
   );
 }

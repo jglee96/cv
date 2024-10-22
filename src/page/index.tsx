@@ -84,7 +84,7 @@ export default function Page() {
           <Text component="div">{item.title}</Text>
           <Flex gap={4} wrap="wrap">
             {item.skills.map((item) => (
-              <Badge key={item} radius="md">
+              <Badge key={item} variant="outline" radius="md" size="xs">
                 {item}
               </Badge>
             ))}

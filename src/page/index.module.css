@@ -2,10 +2,6 @@
   white-space: pre-wrap;
 }
 
-.work {
-  page-break-inside: avoid;
-}
-
 .pageBreak {
   page-break-after: always;
 }

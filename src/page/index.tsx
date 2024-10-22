@@ -69,7 +69,7 @@ export default function Page() {
       <Space className={classes.pageBreak} h="md" />
       <Title>Work Experience</Title>
       {RESUME_DATA.work.map((item) => (
-        <Stack key={item.company} className={classes.work} gap={2} my="md">
+        <Stack key={item.company} gap={2} my="md">
           <Flex justify="space-between">
             <Anchor
               fz="lg"

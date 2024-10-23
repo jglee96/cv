@@ -75,6 +75,7 @@ export default function Page() {
               fz="lg"
               fw={700}
               href={item.link}
+              target="_blank"
               c="var(--mantine-color-text)"
             >
               {item.company}

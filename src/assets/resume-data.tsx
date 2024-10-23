@@ -90,7 +90,12 @@ export const RESUME_DATA = {
       description: (
         <ul>
           <li>
-            <h3>BUILDIT 플랫폼 개발</h3>
+            <h3>
+              <a href="https://www.buildit.co.kr/landing" target="_blank">
+                BUILDIT
+              </a>{" "}
+              플랫폼 개발
+            </h3>
           </li>
           <h4>기존 코드 유지 보수</h4>
           <span>
@@ -127,7 +132,12 @@ export const RESUME_DATA = {
             타입을 매번 정의하도록 하여 any 사용을 최소화하였습니다.
           </span>
           <li>
-            <h3>연속지적도 다운로드 서비스 개발</h3>
+            <h3>
+              <a href="https://map.buildit.co.kr/" target="_blank">
+                연속지적도 다운로드 서비스
+              </a>{" "}
+              개발
+            </h3>
           </li>
           <h4>Monorepo 사용한 서비스 개발</h4>
           <span>
